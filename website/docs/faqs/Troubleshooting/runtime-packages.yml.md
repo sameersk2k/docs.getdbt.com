@@ -26,3 +26,14 @@ version: xxx
 ```
 
 If you've tried the workaround above and are still experiencing this behavior - reach out to the Support team at support@getdbt.com and we'll be happy to help!
+
+for this error try this:
+This works in dbt_project.yml :
+name: 'retail'
+version: '1.0.0'
+config-version: 2
+profile: 'retail'
+
+models:
+retail:
+materialized: table
